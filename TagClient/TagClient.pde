@@ -226,6 +226,7 @@ void draw() {
           if (queueStatus.y > -35) {
              warningPopup.enable("Please leave the queue\nto access that feature");
           } else {
+            // ADD CREDITS !!!
             //Do stuff
           }
         
@@ -322,35 +323,7 @@ void draw() {
       fadeIn = false;
     }
     
-
-    //FADE
-    if (fadeIn) {
-      if (fade > 0) {
-        fade -= 5;
-      } else {
-        fade = 0;
-        fadeIn = false;
-        fadeOut = false;
-      }
-    }
-    
-    if (fadeOut) {
-      if (fade < 255) {
-        fade += 5;
-      } else {
-        MENU = changeTo;
-        fadeOut = false;
-        fadeIn = true;
-        fade = 255;
-      }
-    }
-    
-    if (fadeIn || fadeOut) {
-      rectMode(CORNER);
-      noStroke();
-      fill(0, fade);
-      rect(0, 0, width, height);
-    }
+    fadeAnim();
     
   }
   if (MENU == 3) { //Shop Menu
@@ -370,37 +343,11 @@ void draw() {
       fadeIn = false;
     }
     
-    //FADE
-    if (fadeIn) {
-      if (fade > 0) {
-        fade -= 5;
-      } else {
-        fade = 0;
-        fadeIn = false;
-        fadeOut = false;
-      }
-    }
+    fadeAnim();
     
-    if (fadeOut) {
-      if (fade < 255) {
-        fade += 5;
-      } else {
-        MENU = changeTo;
-        fadeOut = false;
-        fadeIn = true;
-        fade = 255;
-      }
-    }
-    
-    if (fadeIn || fadeOut) {
-      rectMode(CORNER);
-      noStroke();
-      fill(0, fade);
-      rect(0, 0, width, height);
-    }
   }
   
-  if (MENU == 4) {
+  if (MENU == 4) {  //Settings Menu
     background(230);
     imageMode(CORNER);
     image(logoImg, 30, 30);
@@ -417,35 +364,8 @@ void draw() {
       fadeIn = false;
     }
     
+    fadeAnim();
     
-    //FADE
-    if (fadeIn) {
-      if (fade > 0) {
-        fade -= 5;
-      } else {
-        fade = 0;
-        fadeIn = false;
-        fadeOut = false;
-      }
-    }
-    
-    if (fadeOut) {
-      if (fade < 255) {
-        fade += 5;
-      } else {
-        MENU = changeTo;
-        fadeOut = false;
-        fadeIn = true;
-        fade = 255;
-      }
-    }
-    
-    if (fadeIn || fadeOut) {
-      rectMode(CORNER);
-      noStroke();
-      fill(0, fade);
-      rect(0, 0, width, height);
-    }
   }
   
   
@@ -531,9 +451,15 @@ void draw() {
     }
     
     
-    
+    fadeAnim();
+  
+  }
+}
 
-    
+//---------------------------------------------------------------------------------------
+
+//Fading animation between window changes
+void fadeAnim() {
     //FADE
     if (fadeIn) {
       if (fade > 0) {
@@ -553,8 +479,6 @@ void draw() {
         fadeOut = false;
         fadeIn = true;
         fade = 255;
-        
-        gameStarted = false;
       }
     }
     
@@ -564,10 +488,8 @@ void draw() {
       fill(0, fade);
       rect(0, 0, width, height);
     }
-  }
 }
 
-//---------------------------------------------------------------------------------------
 
 //Check to see if server sent that we in a match
 void checkMatch() {
