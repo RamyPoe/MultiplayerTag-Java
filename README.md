@@ -1,4 +1,4 @@
-#### Online Multiplayer game using authoritative server model. Can handle concurrent games with an encrypted Login/Signup system and user queueing functionality.
+#### Online Multiplayer game using authoritative server model. Can handle concurrent games with an encrypted Login/Signup system and user queueing functionality. Takes advantage of Entity Interpolation, Server Reconciliation, and Client-side prediction.
 
 ___
 
