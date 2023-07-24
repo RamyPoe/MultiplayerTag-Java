@@ -4,13 +4,14 @@ ___
 
 ## Project Screen Shots
 
-![ALT](https://i.ibb.co/k3NC3Wy/image9.png)
-![ALT](https://i.ibb.co/xjXtSrw/image5.png)
-![ALT](https://i.ibb.co/sR7D0vt/image6.png)
-![ALT](https://i.ibb.co/hDpx12K/image8.png)
-![ALT](https://i.ibb.co/GW881br/image3.png)
-![ALT](https://i.ibb.co/fG2QxxZ/image4.png)
-![ALT](https://i.ibb.co/NVXyDVM/image7.png)
+![ALT](https://github.com/RamyPoe/MultiplayerTag-Java/blob/main/images/1.png?raw=true)
+![ALT](https://github.com/RamyPoe/MultiplayerTag-Java/blob/main/images/2.png?raw=true)
+![ALT](https://github.com/RamyPoe/MultiplayerTag-Java/blob/main/images/3.png?raw=true)
+![ALT](https://github.com/RamyPoe/MultiplayerTag-Java/blob/main/images/4.png?raw=true)
+![ALT](https://github.com/RamyPoe/MultiplayerTag-Java/blob/main/images/5.png?raw=true)
+![ALT](https://github.com/RamyPoe/MultiplayerTag-Java/blob/main/images/6.png?raw=true)
+![ALT](https://github.com/RamyPoe/MultiplayerTag-Java/blob/main/images/7.png?raw=true)
+
 
 ## Installation and Setup Instructions
 
